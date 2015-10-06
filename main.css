@@ -1,0 +1,14 @@
+body {
+	background: #F29FBB;
+	color: #404041;
+	font-family: 'Muli', Helvetica, Arial, sans-serif;
+	padding-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Quicksand', sans-serif;
+}
+
+#logo img {
+	max-height: 6em;
+}
