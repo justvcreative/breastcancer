@@ -9,6 +9,11 @@ Off White #F2F3F5
 
 */
 
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+
 body {
 	background: #DC6584;
 	color: #F2E7D3;
@@ -16,18 +21,27 @@ body {
 	padding-top: 9em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .figure {
 	font-family: 'Quicksand', sans-serif;
 }
 
 p {
 	font-size: 2em;
-	margin: 1.25em 1.5em;
+	margin: 1.25em 0;
 }
+
+/* ==========================================================================
+   Logo Styles
+   ========================================================================== */
 
 #logo img {
 	max-height: 6em;
 }
+
+/* ==========================================================================
+   Direction Button Styles
+   ========================================================================== */
+
 
 /* ==========================================================================
    Navigation Styles
@@ -179,15 +193,47 @@ p {
    Page Styles
    ========================================================================== */
 
-   /* ====== Home Section ====== */
-   
+   /* ============ Default Styles ============ */
+
    .page {
-   		text-align: center;
+   		padding: 20% 0;
    }
+
+   .page-white-bg {
+   		background: #F2F3F5;
+   		color: #DC6584;
+   }
+
+   /* ====== Home Section ====== */
 
    #title {
    	font-size: 4em;
-   	margin-top: 10%;
    }
 
-   /* ====== Section ====== */
+   .figure {
+   	font-size: 6em;
+   }
+
+   /* ====== Risks Section ====== */
+
+   	#warnings li,
+   	#breasts li {
+   		font-size: 1.5em;
+   	}
+
+   	/* ====== Progress Section ====== */
+
+   	#deathrate img,
+   	#breasts img {
+   		max-width: 400px;
+   	}
+
+   #deathrate p {
+   	padding-top: 4em;
+   }
+
+   /* ====== Prevention Section ====== */
+
+   #breasts h2 {
+   	padding-top: 2em;
+   }
