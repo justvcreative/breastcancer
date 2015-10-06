@@ -21,8 +21,9 @@ body {
 	padding-top: 9em;
 }
 
-h1, h2, h3, h4, h5, h6, .figure {
+h1, h2, h3, h4, h5, h6, #title, .figure {
 	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
 }
 
 p {
@@ -50,6 +51,14 @@ p {
 	.navbar-brand {
 		padding: 0;
 		font-size: 1.25em;
+	}
+
+	#donate-icon {
+		color: #F2E7D3;
+		display: block;
+		position: absolute;
+		right: 0;
+		padding: 2.75em 6em;
 	}
 
 	a.nav-expander {
@@ -236,4 +245,25 @@ p {
 
    #breasts h2 {
    	padding-top: 2em;
+   }
+
+   /* ====== Donate Section ====== */
+
+   .donate-btn {
+   	background: #F29FBB;
+   	color: #F2F3F5;
+   	font-size: 2em;
+   	padding: .5em 0;
+   	margin: 1em 0 .5em;
+   }
+
+   .donate-btn:hover,
+   .donate-btn:focus,
+   .donate-btn:active {
+   	background: #DE4980;
+   	color: #F2F3F5;
+   }
+
+   .donate-btn:focus {
+   	border-color: #404041;
    }
