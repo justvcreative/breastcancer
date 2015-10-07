@@ -289,6 +289,17 @@ p {
 
    /* ====== About/Footer Section ====== */
 
+   .flexbox {
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  overflow: hidden;
+	}
+
+	.flex-col {
+		flex: 1;
+	}
+
    #About .page {
    	padding: 10% 0 2%;
    }
