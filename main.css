@@ -58,7 +58,16 @@ p {
 		display: block;
 		position: absolute;
 		right: 0;
-		padding: 2.75em 6em;
+		margin: 2.75em 8em 0 2.75em;
+
+		transition: right 0.3s ease-in-out 0s;
+	  	-webkit-transition: right 0.3s ease-in-out 0s;
+	  	-moz-transition: right 0.3s ease-in-out 0s;
+	  	-o-transition: right 0.3s ease-in-out 0s;
+	}
+
+	.nav-expanded #donate-icon {
+		right: 13em;
 	}
 
 	a.nav-expander {
@@ -213,6 +222,16 @@ p {
    		color: #DC6584;
    }
 
+   .page-cream-bg {
+   	background: #F2E7D3;
+   	color: #DC6584;
+   }
+
+   .page-tint-bg {
+   	background: #F29FBB;
+   	color: #404041;
+   }
+
    /* ====== Home Section ====== */
 
    #title {
@@ -266,4 +285,33 @@ p {
 
    .donate-btn:focus {
    	border-color: #404041;
+   }
+
+   /* ====== About/Footer Section ====== */
+
+   #About .page {
+   	padding: 10% 0 2%;
+   }
+
+   #About p {
+   	font-size: 1.25em;
+   	padding: 0 2em;
+   }
+
+   #profile img {
+   	max-width: 200px;
+   	border: 4px solid #F2E7D3;
+   }
+
+   #profile a {
+   	text-decoration: none;
+   	color: #DE4980;
+   }
+
+   #profile a:hover {
+   	color: #F2E7D3;
+   }
+
+   #sources {
+   	padding-left: 25%;
    }
