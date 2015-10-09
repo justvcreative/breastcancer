@@ -21,14 +21,14 @@ body {
 	padding-top: 9em;
 }
 
-h1, h2, h3, h4, h5, h6, #title, .figure {
+h1, h2, h3, h4, h5, h6, .figure {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
 }
 
 p {
 	font-size: 2em;
-	margin: 1.25em 0;
+	margin-top: 1em;
 }
 
 /* ==========================================================================
@@ -131,13 +131,6 @@ p {
 	  -o-transition: right 0.4s ease-in-out 0s;
 	}
 
-	#nav-close {
-	  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	  font-weight: 300;
-	  font-size: 24px;
-	  padding-right: 10px;
-	}
-
 	.main-menu {
 	  padding-top: 12px;
 	}
@@ -232,41 +225,80 @@ p {
    	color: #404041;
    }
 
-   /* ====== Home Section ====== */
-
-   #title {
-   	font-size: 4em;
-   }
-
    .figure {
    	font-size: 6em;
    }
 
+   
+   /* Citations Styles */
+
+   sup {
+   	position: relative;
+   	cursor: pointer;
+   } 
+
+
+   sup a, sup a:hover {
+   	color: #404041;
+   	text-decoration: none;
+   }
+
+   sup span {
+   	font-size: .75em;
+   	text-align: left;
+   	background: #F2F3F5;
+   	color: #DE4980;
+   	border: 2px solid #DE4980;
+   	border-radius: .5em;
+   	cursor: default;
+   	position: absolute;
+   	left: 200%;
+   	bottom: 25%;
+   	margin: 0 0 0.7em -1em;
+   	width: 20em;
+   	padding: 1em;
+   	line-height: 1.6em;
+   	opacity: 0;
+   	visibility: hidden;
+   	transition: all 0.35s;
+   }
+
+   sup span a:hover {
+   	text-decoration: underline;
+   }
+
+	sup:hover span {
+	  opacity: 1;
+	  visibility: visible;
+	  transition: all 0.35s;
+	}
+
+   /* ====== Home/Definition Section ====== */
+
+   #Definition, #Donate {
+   	margin-top: -10%;
+   }
+
+   #title {
+   	font-size: 4em;
+   }
+   
+
    /* ====== Risks Section ====== */
 
-   	#warnings li,
-   	#breasts li {
-   		font-size: 1.5em;
-   	}
+   
 
    	/* ====== Progress Section ====== */
 
-   	#deathrate img,
-   	#breasts img {
-   		max-width: 400px;
-   	}
-
-   #deathrate p {
-   	padding-top: 4em;
-   }
+   	
 
    /* ====== Prevention Section ====== */
 
-   #breasts h2 {
-   	padding-top: 2em;
-   }
+   
 
    /* ====== Donate Section ====== */
+
+   /* Donate Button */
 
    .donate-btn {
    	background: #F29FBB;
@@ -290,10 +322,12 @@ p {
    /* ====== About/Footer Section ====== */
 
    .flexbox {
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display: flex;
-	  overflow: hidden;
+	   	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box; 	/* OLD - Firefox 19- (buggy but mostly works) */
+		display: -webkit-flex; /* NEW - Chrome */
+		display: -ms-flexbox;	/* TWEENER - IE 10 */
+		display: flex;  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+		overflow: hidden;
 	}
 
 	.flex-col {
@@ -323,6 +357,7 @@ p {
    	color: #F2E7D3;
    }
 
-   #sources {
-   	padding-left: 25%;
+   #sources a, #sources a:hover {
+   	color: #404041;
    }
+
