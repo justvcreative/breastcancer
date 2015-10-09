@@ -13,6 +13,8 @@ Off White #F2F3F5
    Typography
    ========================================================================== */
 
+/* Google Webfont Quicksand & Muli 400 */
+@import url(https://fonts.googleapis.com/css?family=Quicksand|Muli);
 
 body {
 	background: #DC6584;
@@ -23,11 +25,10 @@ body {
 
 h1, h2, h3, h4, h5, h6, .figure {
 	font-family: 'Quicksand', sans-serif;
-	font-weight: 400;
 }
 
 p {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin-top: 1em;
 }
 
@@ -226,7 +227,11 @@ p {
    }
 
    .figure {
-   	font-size: 6em;
+   	font-size: 8em;
+   }
+
+   .figure img {
+   	max-width: 360px;
    }
 
    
@@ -282,17 +287,24 @@ p {
    #title {
    	font-size: 4em;
    }
-   
+
+   #Definition p {
+   	font-size: 2em;
+   }
 
    /* ====== Risks Section ====== */
 
+   #Risks li {
+   	font-size: 30%;
+   }
    
 
-   	/* ====== Progress Section ====== */
+   /* ====== Warning Signs Section ====== */
 
-   	
-
-   /* ====== Prevention Section ====== */
+   #Warnings li,
+   #Earlydetection li {
+   	font-size: 1.125em;
+   }
 
    
 
@@ -341,6 +353,19 @@ p {
    #About p {
    	font-size: 1.25em;
    	padding: 0 2em;
+   }
+
+   #profile {
+   	margin: 0 -15px;
+   }
+
+   #profile p {
+   	padding: 0 25%;
+   	line-height: 1.75em;
+   }
+
+   #profile p:first-of-type {
+   	font-weight: bold;
    }
 
    #profile img {
