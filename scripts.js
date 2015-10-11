@@ -1,5 +1,3 @@
-console.log("Hello");
-
 $(function(){												
        
        //Navigation Menu Slider
@@ -15,5 +13,4 @@ $(function(){
       		$('#nav-expander').show();
       		$('#donate-icon').show();
       	});
-        	
 });

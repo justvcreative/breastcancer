@@ -16,11 +16,14 @@ Off White #F2F3F5
 /* Google Webfont Quicksand & Muli 400 */
 @import url(https://fonts.googleapis.com/css?family=Quicksand|Muli);
 
+html {
+	height: 100%;
+}
+
 body {
 	background: #DC6584;
 	color: #F2E7D3;
 	font-family: 'Muli', Helvetica, Arial, sans-serif;	
-	padding-top: 9em;
 }
 
 h1, h2, h3, h4, h5, h6, .figure {
@@ -41,11 +44,6 @@ p {
 }
 
 /* ==========================================================================
-   Direction Button Styles
-   ========================================================================== */
-
-
-/* ==========================================================================
    Navigation Styles
    ========================================================================== */
 
@@ -55,7 +53,7 @@ p {
 	}
 
 	#donate-icon {
-		color: #F2E7D3;
+		color: #404041;
 		display: block;
 		position: absolute;
 		right: 0;
@@ -72,7 +70,7 @@ p {
 	}
 
 	a.nav-expander {
-	  color: #F2E7D3;
+	  color: #404041;
 	  display: block;
 	  font-size: 1.5em;
 	  margin-right: 0;
@@ -278,9 +276,26 @@ p {
 	  transition: all 0.35s;
 	}
 
-   /* ====== Home/Definition Section ====== */
+	/* ====== Main Section ====== */
 
-   #Definition, #Donate {
+	#main {
+		position: relative;
+		height: 600px;
+		background: #fff;
+	}
+	
+	#mainbg {
+		background: url('img/mainbg.jpg') no-repeat center center fixed;
+		height: 100%;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+	}
+
+   /* ====== Definition Section ====== */
+
+   #Donate {
    	margin-top: -10%;
    }
 
@@ -343,7 +358,7 @@ p {
 	}
 
 	.flex-col {
-		flex: 1;
+		flex: 2;
 	}
 
    #About .page {
@@ -384,5 +399,69 @@ p {
 
    #sources a, #sources a:hover {
    	color: #404041;
+   }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+	   @media screen and (max-width: 768px ) {
+	   	
+	   	h1, h2, h3, h4, h5, h6, p, .figure {
+		text-align: center;
+		}
+
+		h1, h2, h3 {
+			font-size: 1.75em;
+		}
+
+		#logo img {
+			max-height: 4em;
+			margin-top: 1em;
+		}
+
+		#Definition {
+			margin-top: -20%;
+		}
+
+	   	#Definition p, #profile p, p {
+	   		font-size: 1em;
+	   		padding: 0 10%;
+	   	}
+
+	   	#mainbg {
+	   		background-size: 150%;
+	   	}
+
+	   	.main-menu li {
+	   		font-size: 1em;
+	   	}
+
+	   	.figure {
+	   		font-size: 4em;
+	   	}
+
+	   	.figure img {
+	   		max-width: 200px;
+	   	}
+
+	   	#title {
+	   	font-size: 2.5em;
+	   }
+
+	   #profile img {
+	   	max-width: 120px;
+	   }
+
+	   #citations, #resources {
+	   	font-size: .6em;
+	   	padding-top: 1.25em;
+	   	padding-right: 10%;
+	   }
+
+	   #citations li, #resources li {
+	   	padding-top: 1em;
+	   }
+   
    }
 
