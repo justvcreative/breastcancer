@@ -219,11 +219,6 @@ p {
    	color: #DC6584;
    }
 
-   .page-tint-bg {
-   	background: #F29FBB;
-   	color: #404041;
-   }
-
    .figure {
    	font-size: 8em;
    }
@@ -298,10 +293,6 @@ p {
 
    /* ====== Definition Section ====== */
 
-   #Donate {
-   	margin-top: -10%;
-   }
-
    #title {
    	font-size: 4em;
    }
@@ -309,6 +300,8 @@ p {
    #Definition p {
    	font-size: 2em;
    }
+
+   /* ====== Risks Section ====== */
 
    #Risks .figure {
 	   	font-size: 4em;
@@ -323,6 +316,14 @@ p {
    }
 
    /* ====== Donate Section ====== */
+
+   #Donate {
+   	margin-top: -10%;
+   }
+
+   #Donate p {
+   	padding: 1em 10% 0;
+   }
 
    /* Donate Button */
 
@@ -362,6 +363,7 @@ p {
 
    #profile p {
    	padding: 0 10%;
+   	line-height: 1.75em;
    }
 
    #profile img {
@@ -372,6 +374,12 @@ p {
    #profile a {
    	text-decoration: none;
    	color: #DE4980;
+   }
+
+   #citations li,
+   #resources li {
+   	padding-top: .75em;
+   	line-height: 1.5em;
    }
 
    #profile p, 
