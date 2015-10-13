@@ -272,24 +272,18 @@ p {
 	}
 
 	/* ====== Main Section ====== */
-
-	header { 
-		position: relative;
+	
+	#main {
+		background: #F2E7D3;
+		max-height: 800px;
+		padding: 6em 0;
+		border-bottom: .25em solid #404041;
 	}
 
-	#main {
-		background: #fff;
-		height: 800px;
+	#main img {
+		margin: 0 auto;
 	}
 	
-	#mainbg {
-		background: url('img/mainbg.jpg') no-repeat center center fixed;
-		min-height: 100%;
-		background-size: cover;
-		-moz-background-size: cover;
-		-webkit-background-size: cover;
-		-o-background-size: cover;
-	}
 
    /* ====== Definition Section ====== */
 
@@ -354,7 +348,7 @@ p {
    /* ====== About/Footer Section ====== */
 
    footer {
-   	border-top: 1em solid #404041;
+   	border-top: .25em solid #404041;
    }
    
    #About .page {
