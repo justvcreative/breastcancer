@@ -206,7 +206,8 @@ p {
    /* ============ Default Styles ============ */
 
    .page {
-   		padding: 20% 0;
+    	height: 100vh;
+    	padding-top: 8em;
    }
 
    .page-white-bg {
@@ -311,10 +312,6 @@ p {
 
    /* ====== Donate Section ====== */
 
-   #Donate {
-   	margin-top: -10%;
-   }
-
    #Donate p {
    	padding: 1em 10% 0;
    }
@@ -351,8 +348,8 @@ p {
    	border-top: .25em solid #404041;
    }
    
-   #About .page {
-   	padding: 5% 0;
+   #About {
+   	padding-top: 8em;
    }
 
    #profile p {
@@ -363,6 +360,10 @@ p {
    #profile img {
    	max-width: 200px;
    	border: 5px solid #404041;
+   }
+
+   #profile {
+   	padding-bottom: 2em;
    }
 
    #profile a {
@@ -389,14 +390,22 @@ p {
    Media Queries
    ========================================================================== */
 
-   	@media screen and (min-width: 769px ) and ( max-width: 1024px )  {
+   	@media screen and (min-width: 768px ) and ( max-width: 1024px )  {
 
    		#Risks .figure {
    			font-size: 2em;
    		}
+
+   		.figure {
+   			font-size: 6em;
+   		}
+
+   		.figure img {
+   			max-width: 300px;
+   		}
    	}
 
-	@media screen and (max-width: 768px ) {
+	@media screen and (max-width: 767px ) {
 	   	
 	   	h1, h2, h3, h4, h5, h6, p, .figure {
 		text-align: center;
@@ -411,10 +420,6 @@ p {
 			margin-top: 1em;
 		}
 
-		#Definition {
-			margin-top: -20%;
-		}
-
 	   	#Definition p, #profile p, p {
 	   		font-size: 1em;
 	   		padding: 0 10%;
@@ -424,7 +429,11 @@ p {
 	   		background-size: 150%;
 	   	}
 
-	   	.main-menu li {
+	   	.main-menu li,
+	   	#citations li,
+	   	#sources li,
+	   	#Warnings li,
+	   	#Earlydetection li {
 	   		font-size: 1em;
 	   	}
 
