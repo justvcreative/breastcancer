@@ -460,6 +460,18 @@ p {
 	   	max-width: 120px;
 	   }
 
+	   #Contact  {
+	   	padding: 0 10%;
+	   }
+
+	   #socialnav li {
+	   	padding: .25em;
+	   }
+
+	   #socialnav i {
+	   	font-size: 2.125em;
+	   }
+
 	   #sources {
 	   	padding: 0 10%;
 	   }
