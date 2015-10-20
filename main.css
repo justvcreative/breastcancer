@@ -206,8 +206,8 @@ p {
    /* ============ Default Styles ============ */
 
    .page {
-    	height: 100vh;
-    	padding-top: 8em;
+    	min-height: 100vh;
+    	padding: 25% 0;
    }
 
    .page-white-bg {
@@ -371,10 +371,14 @@ p {
    	color: #DE4980;
    }
 
+   #citations, #resources {
+   	padding-bottom: 2em;
+   }
+
    #citations li,
    #resources li {
    	padding-top: .75em;
-   	line-height: 1.5em;
+   	line-height: 1.75em;
    }
 
    #profile p, 
@@ -385,7 +389,6 @@ p {
    #resources a:hover {
    	color: #404041;
    }
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
