@@ -13,8 +13,8 @@ Off White #F2F3F5
    Typography
    ========================================================================== */
 
-/* Google Webfont Quicksand & Muli 400 */
-@import url(https://fonts.googleapis.com/css?family=Quicksand|Muli);
+/* Google Webfont Quicksand 400, 700, & Muli 400 */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700|Muli);
 
 html {
 	height: 100%;
@@ -276,20 +276,43 @@ p {
 	
 	#main {
 		background: #F2E7D3;
-		max-height: 800px;
-		padding: 6em 0;
 		border-bottom: .25em solid #404041;
+		color: #404041;
 	}
 
-	#main img {
-		margin: 0 auto;
+	#mainbgimg {
+		max-width: 40%;
+		height: 100%;
+		margin-right: .5em;
 	}
-	
+
+	#mainbgimg img {
+    	width: 100%;
+    	height: 100%;
+	}
+
+	#headertext {
+		padding: 25% 5% 0 0;
+		margin-left: .5em;
+	}
+
+	#headertext h1, #headertext h2 {
+		font-weight: 700;
+	}
+
+	#headertext h2 {
+		color: #DC6584;
+	}
+
+	#headertext h1 {
+		font-size: 3em;
+	}
 
    /* ====== Definition Section ====== */
 
    #title {
    	font-size: 4em;
+   	padding: 0 5%;
    }
 
    #Definition p {
@@ -406,6 +429,20 @@ p {
    		.figure img {
    			max-width: 300px;
    		}
+
+   		#headertext h1, #headertext h2 {
+			text-align: left;
+		}
+
+		#headertext h1 {
+			font-size: 3rem;
+			margin: 0;
+		}
+
+		#headertext h2 {
+			font-size: 2.25rem;
+			margin: .5em 0 0;
+		}
    	}
 
 	@media screen and (max-width: 767px ) {
@@ -422,6 +459,21 @@ p {
 			max-height: 4em;
 			margin-top: 1em;
 		}
+
+		#headertext h1, #headertext h2 {
+			text-align: left;
+		}
+
+		#headertext h1 {
+			font-size: 1.5rem;
+			margin: 0;
+		}
+
+		#headertext h2 {
+			font-size: 1.25rem;
+			margin: .5em 0 0;
+		}
+
 
 	   	#Definition p, #profile p, p {
 	   		font-size: 1em;
